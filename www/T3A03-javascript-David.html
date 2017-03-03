@@ -1,0 +1,31 @@
+
+<h1 align=center>Javascript by David</h1>
+
+Put the stuff in the textarea into the div<br><br>
+
+<textarea id="myArea01">enter stuff here</textarea><br><br>
+
+<input type=button value='click me' onclick="{
+
+document.getElementById('myDiv01').innerHTML =
+    document.getElementById('myArea01').value
+
+
+}"><br><br>
+
+<div id="myDiv01">Output here</div><br><br>
+
+<input type=button value='on' id="mybutton01" onclick="{
+// alert(document.getElementById('mybutton01').value)
+ 
+ 
+ 
+if (document.getElementById('mybutton01').value == 'on') {
+    document.getElementById('mybutton01').value = 'off'
+   } else {
+    document.getElementById('mybutton01').value = 'on'
+  }
+} ">
+
+
+
